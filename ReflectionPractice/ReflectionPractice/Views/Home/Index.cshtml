@@ -1,0 +1,10 @@
+﻿@using ReflectionPractice.Services
+@{
+    ViewData["Title"] = "Home Page";
+}
+@inject IUserService userService
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Currently we have @this.userService.GetUsersCount() users registered</p>
+</div>
